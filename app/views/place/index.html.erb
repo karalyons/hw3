@@ -1,0 +1,16 @@
+<h1>Places I've Been</h1>
+ 
+<ul>
+  <% for company in @companies %>
+    <li>
+      <a href="/companies/<%= company["id"] %>">
+      <%= company["name"] %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+
+<p>
+    <a href="/companies/new">Create a company</a>
+</p>
